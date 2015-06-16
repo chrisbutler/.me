@@ -1,0 +1,106 @@
+html, body {
+  width: 100%;
+  background-color: #f5841f;
+}
+
+.container {
+  width: 465px;
+  margin: 35px auto 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: right;
+  margin: 75px 0 60px;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.links {
+  position: relative;
+  width: 465px;
+  height: 245px;
+  background: transparent url('../images/cbb-logo.png') center no-repeat;
+}
+
+.twitter {
+  width: 465px;
+  margin-top: 55px;
+}
+
+.instagram {
+  width: 465px;
+  margin-top: 75px;
+}
+
+.ji-tumblr-photos {
+  margin-left: -5px;
+}
+
+.ji-tumblr-photos a img {
+  width: 73px;
+  height: 73px;
+}
+
+.addthis_toolbox {
+  position: absolute;
+  right: -2px;
+  bottom: 0;
+}
+
+.addthis_toolbox a {
+  margin: 0 3px;
+}
+
+#tweets {
+  position: relative;
+  font-size: 21px;
+  width: 465px;
+  padding: 0 0 25px 0;
+  color:#404333;
+}
+
+#tweets ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#tweets .user span span {
+  font-weight: bold;
+}
+
+#tweets .user img {
+  float: left;
+  margin: 0 10px 75px 0;
+}
+
+#tweets .tweet a {
+  color: #333;
+  opacity: .75;
+}
+
+#tweets a {
+  color:#eae8f4;
+  text-decoration: none;
+}
+
+#tweets p {
+ min-width: 465px;
+ display: block;
+ margin: 0;
+ background: url();
+}
+
+#tweets .timePosted {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  text-align: right;
+  opacity: .5;
+}
