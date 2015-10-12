@@ -13,41 +13,39 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/chrisbutler.css" />
     <script src="js/twitterFetcher_min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/twitter.js" type="text/javascript" charset="utf-8"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/cbb-favicon.png" type="image/x-icon" />
   </head>
   <body>
+    <div class="instagram">
+      <iframe src="http://snapwidget.com/in/?u=cmVhbGNocmlzYnV0bGVyfGlufDYwMHw2fDF8fG5vfDB8ZmFkZU91dHxvblN0YXJ0fHllc3x5ZXM=&ve=240815" allowTransparency="true" frameborder="0" scrolling="no" ></iframe>
+    </div>
+
     <div class="container">
       <div class="links">
-        <!-- AddThis Follow BEGIN -->
         <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
-        <a class="addthis_button_facebook_follow" addthis:userid="chrisbutler"></a>
-        <a class="addthis_button_twitter_follow" addthis:userid="realchrisbutler"></a>
-        <a class="addthis_button_linkedin_follow" addthis:userid="butlerc"></a>
-        <a class="addthis_button_google_follow" addthis:userid="112234007259984502468"></a>
-        <a class="addthis_button_vimeo_follow" addthis:userid="platformthirteen"></a>
-        <a class="addthis_button_instagram_follow" addthis:userid="realchrisbutler"></a>
-        <a class="addthis_button_tumblr_follow" addthis:userid="realchrisbutler"></a>
+          <a class="addthis_button_facebook_follow" addthis:userid="chrisbutler"></a>
+          <a class="addthis_button_twitter_follow" addthis:userid="realchrisbutler"></a>
+          <a class="addthis_button_linkedin_follow" addthis:userid="butlerc"></a>
+          <a class="addthis_button_google_follow" addthis:userid="112234007259984502468"></a>
+          <a class="addthis_button_vimeo_follow" addthis:userid="platformthirteen"></a>
+          <a class="addthis_button_instagram_follow" addthis:userid="realchrisbutler"></a>
+          <a class="addthis_button_tumblr_follow" addthis:userid="realchrisbutler"></a>
         </div>
-        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5021343a1ccc195c"></script>
-        <!-- AddThis Follow END -->
+        <img class="bg" src="images/cbb-logo.png">
+        <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5021343a1ccc195c" async="async"></script>
       </div>
 
       <h1>
         <a href="http://www.platformthirteen.com" target="_blank">PORTFOLIO</a>
       </h1>
 
-      <div class="instagram">
-        <!-- SnapWidget BEGIN-->
-        <iframe src="https://snapwidget.com/in/?u=cmVhbGNocmlzYnV0bGVyfGlufDczfDZ8MXx8bm98NXxub25l" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:468px; height: 78px" ></iframe>
-        <!-- SnapWidget END -->
 
         <div class='ji-tumblr-photos'>
           <a target="_blank" id='ji-tumblr-url-tumblr-1' href=''><img border='0' style='margin-left:5px' id='ji-tumblr-photo-tumblr-1' src='' alt='' /></a><a target="_blank" id='ji-tumblr-url-tumblr-2' href=''><img border='0' style='margin-left:5px' id='ji-tumblr-photo-tumblr-2' src='' alt='' /></a><a target="_blank" id='ji-tumblr-url-tumblr-3' href=''><img border='0' style='margin-left:5px' id='ji-tumblr-photo-tumblr-3' src='' alt='' /></a><a target="_blank" id='ji-tumblr-url-tumblr-4' href=''><img border='0' style='margin-left:5px' id='ji-tumblr-photo-tumblr-4' src='' alt='' /></a><a target="_blank" id='ji-tumblr-url-tumblr-5' href=''><img border='0' style='margin-left:5px' id='ji-tumblr-photo-tumblr-5' src='' alt='' /></a><a target="_blank" id='ji-tumblr-url-tumblr-6' href=''><img border='0' style='margin-left:5px' id='ji-tumblr-photo-tumblr-6' src='' alt='' /></a>
         </div>
 
-        <script type='text/javascript' src='https://tumblr.chrisbutler.me/api/read/json?number=6&type=photo'></script>
+        <script type='text/javascript' src='http://realchrisbutler.tumblr.com/api/read/json?number=6&type=photo'></script>
         <script type='text/javascript'>
         document.getElementById('ji-tumblr-photo-tumblr-1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-75']);
         document.getElementById('ji-tumblr-url-tumblr-1').setAttribute('href', tumblr_api_read.posts[0]['url-with-slug']);
@@ -62,7 +60,6 @@
         document.getElementById('ji-tumblr-photo-tumblr-6').setAttribute('src', tumblr_api_read.posts[5]['photo-url-75']);
         document.getElementById('ji-tumblr-url-tumblr-6').setAttribute('href', tumblr_api_read.posts[5]['url-with-slug']);
         </script>
-      </div>
 
       <div class="twitter">
         <div id="tweets"><p>Loading...</p></div>
@@ -70,15 +67,19 @@
     </div>
 
     <script type="text/javascript">
-    	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+        analytics.load("6knUCw41VYZkqnclP9zdtzfzoSwog5pJ");
+        analytics.page('landing');
+      }}();
+
+      analytics.ready(function() {
+        var user = analytics.user().anonymousId();
+        analytics.alias(user);
+        analytics.identify(user);
+      });
     </script>
-    <script type="text/javascript">
-    	try {
-    	var pageTracker = _gat._getTracker("UA-11538957-1");
-    	pageTracker._setDomainName(".chrisbutler.me");
-    	pageTracker._trackPageview();
-    	} catch(err) {}
-  	</script>
+
+    <script src="js/twitter.js" type="text/javascript" charset="utf-8"></script>
+
   </body>
 </html>

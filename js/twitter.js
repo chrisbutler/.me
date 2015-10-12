@@ -19,7 +19,6 @@ var cb = {
 };
 
 function handleTweets(tweets){
-  console.log('tweets: ', tweets);
     var x = tweets.length;
     var n = 0;
     var element = document.getElementById('tweets');
