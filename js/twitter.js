@@ -1,34 +1,13 @@
-// var cb = {
-//   "id": '19496635',
-//   "domId": 'tweets',
-//   "maxTweets": 1,
-//   "enableLinks": true
-// };
-
-var cb = {
-  "id": '610645340434239489',
-  "domId": 'tweets',
-  "maxTweets": 1,
-  "enableLinks": true,
-  "showUser": true,
-  "showTime": true,
-  "dateFunction": '',
-  "showRetweet": false,
-  "customCallback": handleTweets,
-  "showInteraction": false
-};
-
-function handleTweets(tweets){
-    var x = tweets.length;
-    var n = 0;
-    var element = document.getElementById('tweets');
-    var html = '<ul>';
-    while(n < x) {
-      html += '<li>' + tweets[n] + '</li>';
-      n++;
-    }
-    html += '</ul>';
-    element.innerHTML = html;
-}
-
-twitterFetcher.fetch(cb);
+$.getJSON("http://embed.chrisbutler.me/twitter", function(data) {
+  var data = data[0];
+  var tweet = '<div class="user"><a href="https://twitter.com/realchrisbutler" aria-label="Chris Butler (screen name: realchrisbutler)" data-scribe="element:user_link" target="_blank"> <img alt="" src="';
+  tweet += data.user.profile_image_url;
+  tweet += '" data-scribe="element:avatar"><span><span data-scribe="element:name">Chris Butler</span></span><span data-scribe="element:screen_name">@realchrisbutler</span></a></div><p class="tweet">';
+  tweet += data.text;
+  tweet += '</p><p class="timePosted"><a target="_blank" href="https://twitter.com/realchrisbutler/status/';
+  tweet += data.id_str;
+  tweet += '">Posted on ';
+  tweet += String(new Date(data.created_at).toLocaleDateString());
+  tweet += '</a></p>';
+  $('#tweets').html(tweet);
+});
